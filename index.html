@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotational Kinetic Energy Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="rotationalKineticEnergyRadio" name="variables" checked>
+  <label for="rotationalKineticEnergyRadio">Rotational Kinetic Energy</label>
+
+  <input type="radio" id="momentofInertiaRadio" name="variables">
+  <label for="momentofInertiaRadio">Moment of Inertia</label>
+
+  <input type="radio" id="angularVelocityoftheObjectRadio" name="variables">
+  <label for="angularVelocityoftheObjectRadio">Angular Velocity of the Object</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(I) Moment of Inertia (rads/sec)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(ω) Angular Velocity of the Object (kg/m²)</label>
+  <input type="number" id="v2"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
